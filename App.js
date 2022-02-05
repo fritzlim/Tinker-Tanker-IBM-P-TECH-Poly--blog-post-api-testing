@@ -29,16 +29,24 @@ export default function App() {
       .then(responseData => {
         console.log('Original data:');
         console.log(responseData);
+
+        // **** Uncomment this to see how to read the content of a particular array element ****
         // // console.log('Content from the 0th element:');
         // console.log(responseData[0].content);
+        // *************************************************************************************
   
+        // **** Uncomment this to see how to read each array element's data using a for loop ****
         // console.log('Itemised data:');
         // // for (var i = 0; i < responseData.length; ++i) {
         // //   console.log(responseData[i]);
         // // }
+        // ***************************************************************************************
+
+        // **** Uncomment this to see how to read each array element's data using a for-of loop ****
         // for (const response of responseData) { // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of (taken from https://www.google.com/search?q=javascript+iterate+array)
         //   console.log(response);
         // }
+        // *****************************************************************************************
 
         resolve(responseData);
       })
